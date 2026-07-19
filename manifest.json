@@ -7,10 +7,6 @@
  "host_permissions":["https://chatgpt.com/*"],
  "content_scripts":[{"matches":["https://chatgpt.com/*"],"js":["src/content.js"],"css":["styles/base.css"]}],
  "action":{"default_popup":"popup/popup.html"},
- "css": [
-    "styles/base.css",
-    "styles/layout.css"
-]
- 
+ "css":["styles/base.css","styles/layout.css","styles/components.css"]
 }
 

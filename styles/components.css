@@ -1,0 +1,107 @@
+/* ===========================================
+   AuraGPT Components v0.2
+   =========================================== */
+
+html.auragpt {
+
+    --ag-radius:24px;
+    --ag-border:rgba(255,255,255,.08);
+    --ag-glass:rgba(255,255,255,.055);
+    --ag-shadow:
+        0 15px 45px rgba(0,0,0,.35);
+
+}
+
+/* ==========================
+   Sidebar
+========================== */
+
+aside{
+
+    margin:14px !important;
+
+    border-radius:24px !important;
+
+    overflow:hidden;
+
+    border:1px solid var(--ag-border)!important;
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:var(--ag-shadow);
+
+}
+
+/* ==========================
+   Composer
+========================== */
+
+form{
+
+    border-radius:28px!important;
+
+    padding:6px!important;
+
+    border:1px solid var(--ag-border)!important;
+
+    backdrop-filter:blur(25px);
+
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+button{
+
+    transition:.2s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================
+   Code
+========================== */
+
+pre{
+
+    border-radius:20px!important;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.07);
+
+}
+
+/* ==========================
+   Tables
+========================== */
+
+table{
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+/* ==========================
+   Links
+========================== */
+
+a{
+
+    transition:.2s;
+
+}
+
+a:hover{
+
+    opacity:.8;
+
+}
