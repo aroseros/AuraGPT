@@ -28,7 +28,9 @@
 "styles/chat.css",
 "styles/animations.css",
 "styles/sidebar.css",
-"styles/aura.css"
+"styles/aura.css",
+"styles/header.css",
+"styles/branding.css"
 ]
     }
   ],

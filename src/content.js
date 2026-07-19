@@ -41,19 +41,29 @@ function applyAuraClasses() {
 
 }
 
-function replaceBranding(){
+function replaceBranding() {
 
-    document.querySelectorAll("*").forEach(el=>{
+    const title = [...document.querySelectorAll("button,div,span")]
+        .find(el => el.textContent.trim() === "ChatGPT");
 
-        if(el.children.length) return;
+    if (!title) return;
 
-        if(el.textContent.trim()==="ChatGPT"){
+    title.classList.add("ag-brand-original");
 
-            el.textContent="Aura";
+    if (document.querySelector(".ag-brand")) return;
 
-        }
+    const aura = document.createElement("div");
 
-    });
+    aura.className = "ag-brand";
+
+    aura.innerHTML = `
+        <img src="${chrome.runtime.getURL("assets/logo.svg")}"
+             width="26"
+             height="26">
+        <span>Aura</span>
+    `;
+
+    title.parentElement.appendChild(aura);
 
 }
 

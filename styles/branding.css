@@ -1,0 +1,36 @@
+/* Hide ChatGPT logo */
+
+svg[aria-label*="ChatGPT"],
+img[alt*="ChatGPT"]{
+
+    display:none!important;
+
+}
+
+/* Hide the "ChatGPT" text in the header */
+
+.ag-brand-original{
+
+    display:none!important;
+
+}
+
+/* Aura title */
+
+.ag-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-weight:700;
+
+    font-size:18px;
+
+    color:white;
+
+    letter-spacing:.4px;
+
+}
