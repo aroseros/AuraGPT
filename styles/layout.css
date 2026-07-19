@@ -1,54 +1,58 @@
-/* ==========================================================
-   AuraGPT Layout
-   ========================================================== */
+/* ===============================
+   AuraGPT Layout v0.2
+   =============================== */
 
-html.auragpt {
-    --ag-max-width: 1100px;
-}
+html.auragpt body{
 
-/* Give the whole app some breathing room */
-html.auragpt body {
-    padding: 18px !important;
-}
+    padding:12px !important;
 
-/* Sidebar becomes floating */
-html.auragpt aside {
-    margin: 12px;
-    border-radius: 24px;
-    overflow: hidden;
-}
-
-/* Chat container */
-html.auragpt main {
-
-    padding: 24px !important;
+    overflow:hidden;
 
 }
 
-/* Center conversation */
+/* App */
+
+html.auragpt body>div{
+
+    height:calc(100vh - 24px);
+
+}
+
+/* Sidebar */
+
+html.auragpt aside{
+
+    margin:12px;
+
+    border-radius:26px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(18,18,25,.55)!important;
+
+    backdrop-filter:blur(24px);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.45);
+
+}
+
+/* Main */
+
+html.auragpt main{
+
+    padding-left:30px!important;
+
+    padding-right:30px!important;
+
+}
+
+/* Conversation */
 
 html.auragpt article{
 
-    max-width:var(--ag-max-width);
+    max-width:980px;
 
     margin:auto;
-
-}
-
-/* Better spacing */
-
-html.auragpt h1,
-html.auragpt h2,
-html.auragpt h3{
-
-    letter-spacing:-.02em;
-
-}
-
-/* Nice selection */
-
-::selection{
-
-    background:#60A5FA55;
 
 }

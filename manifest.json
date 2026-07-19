@@ -1,12 +1,34 @@
 {
- "manifest_version":3,
- "name":"AuraGPT",
- "version":"0.1.0",
- "description":"Glass UI for ChatGPT",
- "permissions":["storage"],
- "host_permissions":["https://chatgpt.com/*"],
- "content_scripts":[{"matches":["https://chatgpt.com/*"],"js":["src/content.js"],"css":["styles/base.css"]}],
- "action":{"default_popup":"popup/popup.html"},
- "css":["styles/base.css","styles/layout.css","styles/components.css"]
-}
+  "manifest_version": 3,
+  "name": "AuraGPT",
+  "version": "0.1.0",
+  "description": "Glass UI for ChatGPT",
 
+  "permissions": [
+    "storage"
+  ],
+
+  "host_permissions": [
+    "https://chatgpt.com/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*"
+      ],
+      "js": [
+        "src/content.js"
+      ],
+      "css": [
+  "styles/base.css",
+  "styles/layout.css",
+  "styles/components.css",
+  "styles/composer.css"]
+    }
+  ],
+
+  "action": {
+    "default_popup": "popup/popup.html"
+  }
+}

@@ -1,0 +1,92 @@
+/* ======================================================
+   AuraGPT - Composer
+   ====================================================== */
+
+html.auragpt form {
+
+    position: relative;
+
+    max-width: 980px !important;
+
+    margin: 24px auto !important;
+
+    padding: 10px 14px !important;
+
+    border-radius: 30px !important;
+
+    background: linear-gradient(
+        180deg,
+        rgba(255,255,255,.09),
+        rgba(255,255,255,.05)
+    ) !important;
+
+    border: 1px solid rgba(255,255,255,.10) !important;
+
+    backdrop-filter: blur(26px);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.45),
+        inset 0 1px 0 rgba(255,255,255,.08);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+}
+
+html.auragpt form:hover{
+
+    transform: translateY(-2px);
+
+    border-color: rgba(96,165,250,.30) !important;
+
+}
+
+html.auragpt form:focus-within{
+
+    transform: translateY(-3px);
+
+    border-color: rgba(96,165,250,.55) !important;
+
+    box-shadow:
+        0 30px 70px rgba(0,0,0,.50),
+        0 0 0 1px rgba(96,165,250,.18),
+        0 0 40px rgba(96,165,250,.15);
+
+}
+
+html.auragpt textarea{
+
+    background: transparent !important;
+
+    border: none !important;
+
+    color: white !important;
+
+    font-size: 16px !important;
+
+    line-height: 1.6;
+
+    padding: 10px 6px !important;
+
+    resize: none;
+
+}
+
+html.auragpt textarea::placeholder{
+
+    color: rgba(255,255,255,.45);
+
+}
+
+html.auragpt button{
+
+    transition: all .2s ease;
+
+}
+
+html.auragpt button:hover{
+
+    transform: scale(1.05);
+
+}
