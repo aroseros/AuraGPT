@@ -1,0 +1,63 @@
+/* ==========================================================
+   AuraGPT Sidebar v1
+   ========================================================== */
+
+html.auragpt aside {
+
+    width: 72px !important;
+    min-width: 72px !important;
+
+    transition: width .25s ease;
+}
+
+/* Expand on hover */
+
+html.auragpt aside:hover {
+
+    width: 260px !important;
+
+}
+
+/* Floating panel */
+
+html.auragpt aside {
+
+    margin: 16px !important;
+
+    border-radius: 28px !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(30,30,40,.75),
+            rgba(12,12,18,.65)
+        ) !important;
+
+    backdrop-filter: blur(30px);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.45);
+
+}
+
+/* Sidebar buttons */
+
+html.auragpt aside button,
+html.auragpt aside a {
+
+    border-radius: 18px !important;
+
+    transition: all .2s ease;
+
+}
+
+html.auragpt aside button:hover,
+html.auragpt aside a:hover {
+
+    background: rgba(255,255,255,.08) !important;
+
+    transform: translateX(4px);
+
+}

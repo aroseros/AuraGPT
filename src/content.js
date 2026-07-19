@@ -1,71 +1,73 @@
-console.log("AuraGPT loaded");
+console.log("AuraGPT v0.4");
 
 document.documentElement.classList.add("auragpt");
 
-function ensureComposerGlow() {
-    if (document.getElementById("ag-composer-glow")) return;
+function applyAuraClasses() {
 
-    const glow = document.createElement("div");
-    glow.id = "ag-composer-glow";
+    // Sidebar
+    const sidebar = document.querySelector("aside");
+    if (sidebar)
+        sidebar.classList.add("ag-sidebar");
 
-    Object.assign(glow.style, {
-        position: "fixed",
-        left: "50%",
-        bottom: "45px",
-        width: "700px",
-        height: "180px",
-        transform: "translateX(-50%)",
-        background:
-            "radial-gradient(circle, rgba(96,165,250,.18), transparent 70%)",
-        filter: "blur(80px)",
-        pointerEvents: "none",
-        zIndex: "-1"
+    // Main
+    const main = document.querySelector("main");
+    if (main)
+        main.classList.add("ag-main");
+
+    // Prompt
+    const form = document.querySelector("form");
+    if (form)
+        form.classList.add("ag-composer");
+
+    // Header
+    const header = document.querySelector("header");
+    if (header)
+        header.classList.add("ag-header");
+
+    // Code Blocks
+    document.querySelectorAll("pre").forEach(pre=>{
+        pre.classList.add("ag-code");
     });
 
-    document.body.appendChild(glow);
-}
-
-ensureComposerGlow();
-
-new MutationObserver(() => {
-    document.documentElement.classList.add("auragpt");
-    ensureComposerGlow();
-}).observe(document.body, {
-    childList: true,
-    subtree: true
-});console.log("AuraGPT loaded");
-
-document.documentElement.classList.add("auragpt");
-
-function ensureComposerGlow() {
-    if (document.getElementById("ag-composer-glow")) return;
-
-    const glow = document.createElement("div");
-    glow.id = "ag-composer-glow";
-
-    Object.assign(glow.style, {
-        position: "fixed",
-        left: "50%",
-        bottom: "45px",
-        width: "700px",
-        height: "180px",
-        transform: "translateX(-50%)",
-        background:
-            "radial-gradient(circle, rgba(96,165,250,.18), transparent 70%)",
-        filter: "blur(80px)",
-        pointerEvents: "none",
-        zIndex: "-1"
+    // Tables
+    document.querySelectorAll("table").forEach(table=>{
+        table.classList.add("ag-table");
     });
 
-    document.body.appendChild(glow);
+    // Messages
+    document.querySelectorAll("article > div").forEach(msg=>{
+        msg.classList.add("ag-message");
+    });
+
 }
 
-ensureComposerGlow();
+function replaceBranding(){
 
-new MutationObserver(() => {
-    document.documentElement.classList.add("auragpt");
-    ensureComposerGlow();
-}).observe(document.body, {
-    childList: true,
-    subtree: true
+    document.querySelectorAll("*").forEach(el=>{
+
+        if(el.children.length) return;
+
+        if(el.textContent.trim()==="ChatGPT"){
+
+            el.textContent="Aura";
+
+        }
+
+    });
+
+}
+
+function initialize(){
+
+    applyAuraClasses();
+
+    replaceBranding();
+
+}
+
+initialize();
+
+new MutationObserver(initialize).observe(document.body,{
+    subtree:true,
+    childList:true
 });

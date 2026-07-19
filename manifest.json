@@ -26,7 +26,9 @@
   "styles/components.css",
   "styles/composer.css",
 "styles/chat.css",
-"styles/animations.css"
+"styles/animations.css",
+"styles/sidebar.css",
+"styles/aura.css"
 ]
     }
   ],

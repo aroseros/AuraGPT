@@ -1,0 +1,49 @@
+/* ==========================================================
+   Aura Engine
+   ========================================================== */
+
+.ag-main{
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+.ag-sidebar{
+
+    transition:.25s;
+
+}
+
+.ag-header{
+
+    backdrop-filter:blur(20px);
+
+}
+
+.ag-message{
+
+    margin:20px 0;
+
+}
+
+.ag-code{
+
+    transition:.2s;
+
+}
+
+.ag-code:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.ag-table{
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+}
