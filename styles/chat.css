@@ -1,0 +1,105 @@
+/* ==========================================================
+   AuraGPT Chat Cards
+   ========================================================== */
+
+html.auragpt{
+
+    --ag-card-bg:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.065),
+            rgba(255,255,255,.035)
+        );
+
+}
+
+/* Assistant & User Messages */
+
+html.auragpt article{
+
+    max-width:960px;
+
+    margin:18px auto;
+
+}
+
+/*
+    ChatGPT changes its HTML often.
+
+    These selectors intentionally target
+    stable elements instead of random classes.
+*/
+
+html.auragpt article>div{
+
+    margin-bottom:22px;
+
+}
+
+html.auragpt article>div>div{
+
+    background:var(--ag-card-bg);
+
+    backdrop-filter:blur(24px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:22px;
+
+    box-shadow:
+
+        0 15px 45px rgba(0,0,0,.28),
+
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+}
+
+/* Hover */
+
+html.auragpt article>div>div:hover{
+
+    border-color:rgba(96,165,250,.25);
+
+    transform:translateY(-2px);
+
+}
+
+/* Better paragraphs */
+
+html.auragpt p{
+
+    line-height:1.75;
+
+}
+
+/* Lists */
+
+html.auragpt ul,
+
+html.auragpt ol{
+
+    padding-left:28px;
+
+}
+
+/* Markdown */
+
+html.auragpt h1{
+
+    margin-top:10px;
+
+}
+
+html.auragpt h2{
+
+    margin-top:24px;
+
+}
+
+html.auragpt h3{
+
+    margin-top:18px;
+
+}

@@ -24,7 +24,10 @@
   "styles/base.css",
   "styles/layout.css",
   "styles/components.css",
-  "styles/composer.css"]
+  "styles/composer.css",
+"styles/chat.css",
+"styles/animations.css"
+]
     }
   ],
 
