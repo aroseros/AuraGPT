@@ -1,72 +1,18 @@
-:root{
-
---ag-bg:#08090B;
-
---ag-surface:rgba(255,255,255,.05);
-
---ag-border:rgba(255,255,255,.08);
-
---ag-radius:24px;
-
-}
-
-html,
-body{
-
+@import url('tokens.css');
+html,body{
 background:
-radial-gradient(circle at top left,#1d4ed855,transparent 35%),
-radial-gradient(circle at bottom right,#7c3aed55,transparent 35%),
-#08090B!important;
-
-color:white;
-
+radial-gradient(circle at top left,#2563eb33,transparent 35%),
+radial-gradient(circle at bottom right,#7c3aed33,transparent 35%),
+var(--ag-bg)!important;
+color:#fff!important;
 }
-
-/* remove ugly solid backgrounds */
-
-main,
-section,
-article{
-
-background:transparent!important;
-
-}
-
-/* Forms */
-
-form{
-
-background:rgba(255,255,255,.06)!important;
-
+aside,form,header{
+background:var(--ag-surface)!important;
 backdrop-filter:blur(24px);
-
-border-radius:28px!important;
-
-border:1px solid rgba(255,255,255,.08)!important;
-
-box-shadow:
-0 15px 50px rgba(0,0,0,.4);
-
+border:1px solid var(--ag-border)!important;
+border-radius:var(--ag-radius)!important;
+box-shadow:var(--ag-shadow);
 }
-
-/* textarea */
-
-textarea{
-
-background:transparent!important;
-
-}
-
-/* buttons */
-
-button{
-
-border-radius:18px!important;
-
-}
-
-button:hover{
-
-transform:translateY(-2px);
-
-}
+button{border-radius:16px!important;transition:.2s}
+button:hover{transform:translateY(-2px)}
+pre{border-radius:18px!important}
