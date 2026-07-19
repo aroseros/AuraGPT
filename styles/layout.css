@@ -1,0 +1,54 @@
+/* ==========================================================
+   AuraGPT Layout
+   ========================================================== */
+
+html.auragpt {
+    --ag-max-width: 1100px;
+}
+
+/* Give the whole app some breathing room */
+html.auragpt body {
+    padding: 18px !important;
+}
+
+/* Sidebar becomes floating */
+html.auragpt aside {
+    margin: 12px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+/* Chat container */
+html.auragpt main {
+
+    padding: 24px !important;
+
+}
+
+/* Center conversation */
+
+html.auragpt article{
+
+    max-width:var(--ag-max-width);
+
+    margin:auto;
+
+}
+
+/* Better spacing */
+
+html.auragpt h1,
+html.auragpt h2,
+html.auragpt h3{
+
+    letter-spacing:-.02em;
+
+}
+
+/* Nice selection */
+
+::selection{
+
+    background:#60A5FA55;
+
+}
