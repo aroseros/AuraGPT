@@ -30,7 +30,8 @@
 "styles/sidebar.css",
 "styles/aura.css",
 "styles/header.css",
-"styles/branding.css"
+"styles/branding.css",
+"styles/messages.css"
 ]
     }
   ],

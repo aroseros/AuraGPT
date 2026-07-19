@@ -1,0 +1,90 @@
+/* ==========================================================
+   AuraGPT Messages v1
+   ========================================================== */
+
+:root {
+    --ag-card-bg: rgba(255,255,255,.045);
+    --ag-card-border: rgba(255,255,255,.08);
+    --ag-card-radius: 24px;
+    --ag-card-shadow: 0 16px 50px rgba(0,0,0,.35);
+}
+
+/* Conversation width */
+
+main {
+
+    --thread-width: 920px;
+
+}
+
+/* Every direct conversation block */
+
+main article {
+
+    max-width: var(--thread-width);
+
+    margin: auto;
+
+}
+
+/* Message spacing */
+
+main article > * {
+
+    margin: 28px 0 !important;
+
+}
+
+/* Most ChatGPT message wrappers */
+
+main article > div,
+main article section {
+
+    background: var(--ag-card-bg);
+
+    border: 1px solid var(--ag-card-border);
+
+    border-radius: var(--ag-card-radius);
+
+    backdrop-filter: blur(24px);
+
+    box-shadow: var(--ag-card-shadow);
+
+    padding: 24px;
+
+}
+
+/* Hover */
+
+main article > div:hover,
+main article section:hover {
+
+    transform: translateY(-2px);
+
+    border-color: rgba(96,165,250,.25);
+
+}
+
+/* Better typography */
+
+main p {
+
+    line-height: 1.8;
+
+}
+
+main li {
+
+    margin: .5rem 0;
+
+}
+
+main h1,
+main h2,
+main h3 {
+
+    margin-top: 1.4em;
+
+    margin-bottom: .8em;
+
+}
