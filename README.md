@@ -1,1 +1,3 @@
 # AuraGPT
+
+Initial scaffold.

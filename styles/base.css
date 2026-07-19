@@ -1,0 +1,163 @@
+/* ==========================================================
+   AuraGPT v0.1
+   Aurora Glass Theme
+   ========================================================== */
+
+:root{
+
+    --bg:#09090b;
+
+    --bg2:#101827;
+
+    --glass:rgba(255,255,255,.06);
+
+    --glass-hover:rgba(255,255,255,.10);
+
+    --border:rgba(255,255,255,.08);
+
+    --shadow:
+        0 20px 45px rgba(0,0,0,.35);
+
+    --radius:22px;
+
+    --text:#ffffff;
+
+    --muted:#9CA3AF;
+
+    --accent:#60A5FA;
+
+    --blur:18px;
+
+}
+
+/* ---------- Background ---------- */
+
+html,
+body{
+
+    background:
+        radial-gradient(circle at top left,#2447ff22,transparent 35%),
+        radial-gradient(circle at bottom right,#8b5cf622,transparent 35%),
+        linear-gradient(160deg,#09090b,#111827);
+
+    color:var(--text);
+
+    min-height:100vh;
+
+}
+
+/* ---------- Global ---------- */
+
+*{
+
+    transition:
+        background .25s,
+        border-color .25s,
+        box-shadow .25s,
+        transform .2s;
+
+}
+
+/* ---------- Sidebar ---------- */
+
+aside{
+
+    background:var(--glass)!important;
+
+    backdrop-filter:blur(var(--blur));
+
+    border-right:1px solid var(--border)!important;
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ---------- Main ---------- */
+
+main{
+
+    background:transparent!important;
+
+}
+
+/* ---------- Composer ---------- */
+
+form{
+
+    background:var(--glass)!important;
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid var(--border)!important;
+
+    border-radius:24px!important;
+
+    box-shadow:var(--shadow);
+
+    overflow:hidden;
+
+}
+
+/* ---------- Textarea ---------- */
+
+textarea{
+
+    background:transparent!important;
+
+    color:white!important;
+
+}
+
+/* ---------- Buttons ---------- */
+
+button{
+
+    border-radius:16px!important;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ---------- Code ---------- */
+
+pre{
+
+    background:rgba(20,20,30,.8)!important;
+
+    border-radius:18px!important;
+
+    border:1px solid var(--border);
+
+}
+
+code{
+
+    color:#e5e7eb!important;
+
+}
+
+/* ---------- Scrollbar ---------- */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ffffff22;
+
+    border-radius:999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#ffffff44;
+
+}
